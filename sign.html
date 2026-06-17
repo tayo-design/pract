@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background:burlywood;
+  color: white;
+}
+
+/* SECTION */
+.booking-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* TITLE */
+.booking-section h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.booking-section p {
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* FORM BOX */
+.booking-form {
+  max-width: 500px;
+  margin: auto;
+  background: black;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* INPUTS */
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: #2a2a2a;
+  color: white;
+}
+
+/* PLACEHOLDER */
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  color: #aaa;
+}
+
+/* BUTTON */
+.booking-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: #ddd;
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="booking-section">
+
+  <h2>Book Appointment</h2>
+  <p>Schedule your haircut and get fresh at your preferred time.</p>
+
+  <form class="booking-form">
+
+    <input type="text" placeholder="Full Name" required>
+
+    <input type="tel" placeholder="Phone Number" required>
+
+    <select required>
+      <option value="">Select Service</option>
+      <option>Classic Haircut</option>
+      <option>Modern Fade</option>
+      <option>Beard Grooming</option>
+      <option>Hair Styling</option>
+    </select>
+
+    <input type="date" required>
+
+    <textarea rows="4" placeholder="Any special request?"></textarea>
+
+    <button type="submit">Book Now</button>
+
+  </form>
+
+</section>
+
+</body>
+</html>

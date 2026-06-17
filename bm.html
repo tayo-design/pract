@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Session</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: burlywood;
+  color: white;
+}
+
+/* SECTION */
+.booking-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.booking-section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.booking-section p {
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* FORM CARD */
+.booking-card {
+  max-width: 550px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  text-align: left;
+}
+
+/* INPUTS */
+.booking-card input,
+.booking-card select,
+.booking-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: white;
+  outline: none;
+}
+
+/* PLACEHOLDER */
+.booking-card input::placeholder,
+.booking-card textarea::placeholder {
+  color: #aaa;
+}
+
+/* BUTTON */
+.booking-card button {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-card button:hover {
+  background: #ddd;
+}
+
+/* SMALL NOTE */
+.note {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="booking-section">
+
+  <h2>Book a Session</h2>
+  <p>Choose your service and secure your spot with our professional barbers.</p>
+
+  <form class="booking-card">
+
+    <input type="text" placeholder="Full Name" required>
+
+    <input type="tel" placeholder="Phone Number" required>
+
+    <select required>
+      <option value="">Select Service</option>
+      <option>Classic Haircut</option>
+      <option>Modern Fade</option>
+      <option>Beard Grooming</option>
+      <option>Hair Styling</option>
+    </select>
+
+    <input type="date" required>
+
+    <input type="time" required>
+
+    <textarea rows="4" placeholder="Any special request?"></textarea>
+
+    <button type="submit">Confirm Booking</button>
+
+    <div class="note">
+      We’ll contact you to confirm your appointment.
+    </div>
+
+  </form>
+
+</section>
+
+</body>
+</html>

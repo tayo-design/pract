@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: burlywood;
+  color: white;
+}
+
+/* SECTION */
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* WRAPPER */
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* INFO BOX */
+.contact-info {
+  background: rgb(178, 140, 89);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* FORM */
+.contact-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: black;
+  outline: none;
+}
+
+/* PLACEHOLDER */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+/* BUTTON */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ddd;
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="contact-section">
+
+  <h2>Contact Us</h2>
+  <p>We’re here to help you look your best. Reach out anytime.</p>
+
+  <div class="contact-container">
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>📍 Location: Lagos, Nigeria</p>
+      <p>📞 Phone: +234 816 402 9311</p>
+      <p>📧 Email: info@willysupercut.com</p>
+      <p>⏰ Open: Mon - Sat (9am - 7pm)</p>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form class="contact-form">
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <textarea rows="5" placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+</body>
+</html>
